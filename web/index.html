@@ -7,9 +7,15 @@
 </head>
 <body>
 	<form enctype="multipart/form-data" action="http://www.hammersister.xyz:8000/excel/" method="post">
-       <input type="file" name="excels" id="file" accept="xlsx" multiple="multiple" /></br>
-       <input type="submit" value="upload"/>
-    </form>
+		<div id="board">
+			<button type="button" id="choose">选择文件</button>
+	      	<input type="file" name="excels" id="file" accept=".xlsx" multiple="multiple" /></br>
+		    <div id="names">
+		    	<input type="text" id="file1" value="未上传文件" readonly>
+		    </div>
+       	</div>
+	    <input type="submit" value="上传文件"/>
+	</form>
 </body>
 <script src="js/index.js"></script>
 </html>
